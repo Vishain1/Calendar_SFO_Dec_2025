@@ -1,217 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Executive Travel Itinerary – Dec 10–13</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive Itinerary</title>
 
-  <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      margin: 0;
-      padding: 20px;
-      background: #f7f7f7;
-      color: #333;
-    }
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-    h1 {
-      text-align: center;
-      font-size: 28px;
-      margin-bottom: 30px;
-    }
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            background: #f4f6f8;
+            color: #333;
+        }
 
-    .day {
-      margin-bottom: 40px;
-    }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 30px 20px;
+        }
 
-    .day h2 {
-      background: #222;
-      color: #fff;
-      padding: 12px 16px;
-      border-radius: 8px;
-      font-size: 20px;
-    }
+        h1 {
+            font-weight: 600;
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 30px;
+            color: #111;
+        }
 
-    .card {
-      background: white;
-      padding: 16px;
-      margin: 14px 0;
-      border-radius: 12px;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.08);
-    }
+        .day-section {
+            margin-bottom: 40px;
+        }
 
-    .title {
-      font-size: 18px;
-      font-weight: 600;
-      margin-bottom: 6px;
-    }
+        .day-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #222;
+        }
 
-    .meta {
-      font-size: 14px;
-      color: #555;
-      margin-bottom: 8px;
-    }
+        .card {
+            background: #ffffff;
+            border-radius: 14px;
+            padding: 18px 22px;
+            margin-bottom: 18px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+            border: 1px solid #e5e7eb;
+        }
 
-    a.map-btn {
-      display: inline-block;
-      padding: 10px 14px;
-      background: #007aff;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-size: 15px;
-      font-weight: 500;
-    }
+        .time {
+            font-size: 14px;
+            color: #6b7280;
+            margin-bottom: 8px;
+        }
 
-    a.map-btn:hover {
-      background: #005fcc;
-    }
-  </style>
+        .person {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 6px;
+        }
 
+        .venue {
+            font-size: 15px;
+            color: #374151;
+            margin-bottom: 6px;
+        }
+
+        .travel {
+            font-size: 14px;
+            color: #6b7280;
+            margin-bottom: 8px;
+        }
+
+        .map-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 14px;
+            background: #1976d2; /* MUI primary blue */
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .map-link:hover {
+            background: #115293;
+        }
+    </style>
 </head>
+
 <body>
+    <div class="container">
+        <h1>Executive Itinerary – Dec 10–13</h1>
 
-<h1>Executive Travel Itinerary<br>10–13 December</h1>
+        <!-- WEDNESDAY -->
+        <div class="day-section">
+            <div class="day-title">Wednesday – 10 Dec</div>
 
-<!-- ================= Wednesday ================ -->
-<div class="day">
-  <h2>📅 Wednesday – 10 December</h2>
+            <div class="card">
+                <div class="time">11:00 AM – 12:00 PM</div>
+                <div class="person">Kenny Wong – Xcures</div>
+                <div class="venue">Ritual Coffee Roasters, 1026 Valencia St, San Francisco</div>
+                <div class="travel">~45 mins • 30 miles from Redwood City hotel</div>
+                <a class="map-link" target="_blank" rel="noopener" 
+                   href="https://www.google.com/maps/search/?api=1&query=Ritual+Coffee+Roasters+1026+Valencia+St+San+Francisco">
+                   Open in Google Maps
+                </a>
+            </div>
 
-  <div class="card">
-    <div class="title">Kenny Wong – Xcures</div>
-    <div class="meta">11:00 AM – 12:00 PM<br>Ritual Coffee Roasters, 1026 Valencia St, San Francisco</div>
-    <a class="map-btn" href="https://maps.google.com/?q=Ritual+Coffee+Roasters+1026+Valencia+St+San+Francisco">
-      Open in Google Maps
-    </a>
-  </div>
+            <div class="card">
+                <div class="time">2:00 PM – 4:00 PM</div>
+                <div class="person">Robert Guigley, Sedide Ozturk – Freenome</div>
+                <div class="venue">Brisbane, CA</div>
+                <div class="travel">~20 mins • 15 miles from hotel</div>
+                <a class="map-link" target="_blank" rel="noopener" 
+                   href="https://www.google.com/maps/search/?api=1&query=Brisbane+CA">
+                   Open in Google Maps
+                </a>
+            </div>
 
-  <div class="card">
-    <div class="title">Freenome – Robert & Sedide</div>
-    <div class="meta">2:00 PM – 4:00 PM<br>Brisbane, CA</div>
-    <a class="map-btn" href="https://maps.google.com/?q=Freenome+Inc+Brisbane+CA">
-      Open in Google Maps
-    </a>
-  </div>
+            <div class="card">
+                <div class="time">Dinner – 7:00 PM</div>
+                <div class="person">Chuck – Latitude CEO</div>
+                <div class="venue">Oakland, East Bay</div>
+                <div class="travel">~34 miles from hotel</div>
+                <a class="map-link" target="_blank" rel="noopener"
+                   href="https://www.google.com/maps/search/?api=1&query=Oakland+East+Bay">
+                   Open in Google Maps
+                </a>
+            </div>
+        </div>
 
-  <div class="card">
-    <div class="title">Chuck – Latitude CEO</div>
-    <div class="meta">Dinner (7:00 PM)<br>Oakland, East Bay</div>
-    <a class="map-btn" href="https://maps.google.com/?q=Oakland+Downtown">
-      Open in Google Maps
-    </a>
-  </div>
-</div>
+        <!-- More days can be added similarly -->
 
-<!-- ================= Thursday ================ -->
-<div class="day">
-  <h2>📅 Thursday – 11 December</h2>
-
-  <div class="card">
-    <div class="title">Prateek Sharma – Ahead VC</div>
-    <div class="meta">10:30 AM – 11:30 AM<br>Peet’s Coffee, Santa Clara</div>
-    <a class="map-btn" href="https://maps.google.com/?q=Peet%E2%80%99s+Coffee+Santa+Clara">
-      Open in Google Maps
-    </a>
-  </div>
-
-  <div class="card">
-    <div class="title">Sanchit Garg</div>
-    <div class="meta">12:00 PM – 1:00 PM<br>Palo Alto</div>
-    <a class="map-btn" href="https://maps.google.com/?q=Palo+Alto+CA">
-      Open in Google Maps
-    </a>
-  </div>
-
-  <div class="card">
-    <div class="title">Brad Hauser – Autonomix</div>
-    <div class="meta">2:00 PM – 3:00 PM<br>Cafe Venetia, Palo Alto</div>
-    <a class="map-btn" href="https://maps.google.com/?q=Cafe+Venetia+Palo+Alto">
-      Open in Google Maps
-    </a>
-  </div>
-
-  <div class="card">
-    <div class="title">Abhijit Ghosh – XM Cyber</div>
-    <div class="meta">3:30 PM – 4:30 PM<br>Cafe Venetia, Palo Alto</div>
-    <a class="map-btn" href="https://maps.google.com/?q=Cafe+Venetia+Palo+Alto">
-      Open in Google Maps
-    </a>
-  </div>
-
-  <div class="card">
-    <div class="title">Dhananjay Singh – Vocera/Stryker</div>
-    <div class="meta">5:00 PM – 6:00 PM<br>Sunnyvale</div>
-    <a class="map-btn" href="https://maps.google.com/?q=Sunnyvale+CA">
-      Open in Google Maps
-    </a>
-  </div>
-</div>
-
-<!-- ================= Friday ================ -->
-<div class="day">
-  <h2>📅 Friday – 12 December</h2>
-
-  <div class="card">
-    <div class="title">Hicham – Resilinc</div>
-    <div class="meta">11:00 AM – 12:00 PM<br>San Ramon</div>
-    <a class="map-btn" href="https://maps.google.com/?q=San+Ramon+CA">
-      Open in Google Maps
-    </a>
-  </div>
-
-  <div class="card">
-    <div class="title">Shantanu Gangal</div>
-    <div class="meta">2:00 PM – 3:00 PM<br>Mountain View</div>
-    <a class="map-btn" href="https://maps.google.com/?q=Mountain+View+CA">
-      Open in Google Maps
-    </a>
-  </div>
-
-  <div class="card">
-    <div class="title">Satish Kamatkar – Ambry</div>
-    <div class="meta">4:00 PM – 5:00 PM<br>San Mateo</div>
-    <a class="map-btn" href="https://maps.google.com/?q=San+Mateo+CA">
-      Open in Google Maps
-    </a>
-  </div>
-</div>
-
-<!-- ================= Saturday ================ -->
-<div class="day">
-  <h2>📅 Saturday – 13 December</h2>
-
-  <div class="card">
-    <div class="title">Avishek Panigrahi</div>
-    <div class="meta">11:00 AM – 12:00 PM<br>Foster City</div>
-    <a class="map-btn" href="https://maps.google.com/?q=Foster+City+CA">
-      Open in Google Maps
-    </a>
-  </div>
-
-  <div class="card">
-    <div class="title">Dileep Goyal – Lunch</div>
-    <div class="meta">1:30 PM – 2:30 PM<br>San Mateo</div>
-    <a class="map-btn" href="https://maps.google.com/?q=San+Mateo+CA">
-      Open in Google Maps
-    </a>
-  </div>
-
-  <div class="card">
-    <div class="title">Anup Ghoghare – Abbott</div>
-    <div class="meta">4:00 PM – 5:00 PM<br>Sunnyvale</div>
-    <a class="map-btn" href="https://maps.google.com/?q=Sunnyvale+CA">
-      Open in Google Maps
-    </a>
-  </div>
-
-  <div class="card">
-    <div class="title">Prajith P – Satellite Healthcare</div>
-    <div class="meta">6:00 PM – 7:00 PM<br>Redwood City</div>
-    <a class="map-btn" href="https://maps.google.com/?q=Redwood+City+CA">
-      Open in Google Maps
-    </a>
-  </div>
-</div>
-
+    </div>
 </body>
 </html>
