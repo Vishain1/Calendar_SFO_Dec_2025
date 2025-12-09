@@ -1,142 +1,340 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Executive Itinerary</title>
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Inter', sans-serif;
-            background: #f4f6f8;
-            color: #333;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 30px 20px;
-        }
-
-        h1 {
-            font-weight: 600;
-            font-size: 32px;
-            text-align: center;
-            margin-bottom: 30px;
-            color: #111;
-        }
-
-        .day-section {
-            margin-bottom: 40px;
-        }
-
-        .day-title {
-            font-size: 24px;
-            font-weight: 600;
-            margin-bottom: 15px;
-            color: #222;
-        }
-
-        .card {
-            background: #ffffff;
-            border-radius: 14px;
-            padding: 18px 22px;
-            margin-bottom: 18px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.06);
-            border: 1px solid #e5e7eb;
-        }
-
-        .time {
-            font-size: 14px;
-            color: #6b7280;
-            margin-bottom: 8px;
-        }
-
-        .person {
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 6px;
-        }
-
-        .venue {
-            font-size: 15px;
-            color: #374151;
-            margin-bottom: 6px;
-        }
-
-        .travel {
-            font-size: 14px;
-            color: #6b7280;
-            margin-bottom: 8px;
-        }
-
-        .map-link {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 10px 14px;
-            background: #1976d2; /* MUI primary blue */
-            color: white;
-            border-radius: 8px;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: 500;
-        }
-
-        .map-link:hover {
-            background: #115293;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Executive Itinerary — Dec 10–13</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f5f7fa; --card:#ffffff; --muted:#6b7280; --accent:#1976d2;
+      --maxw:980px;
+    }
+    html,body{height:100%; margin:0; font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial; background:var(--bg); color:#0f172a;}
+    .wrap{max-width:var(--maxw); margin:28px auto; padding:20px;}
+    header{display:flex; align-items:center; justify-content:space-between; gap:12px; margin-bottom:18px;}
+    header h1{margin:0; font-size:22px; font-weight:700;}
+    header p{margin:0; color:var(--muted); font-size:14px;}
+    .grid{display:grid; grid-template-columns:1fr; gap:18px;}
+    @media(min-width:860px){ .grid{grid-template-columns:1fr 1fr;} }
+    .day {grid-column: 1 / -1;}
+    .day-title{font-size:16px; font-weight:700; margin:6px 0 8px; color:#0b1320;}
+    .card{
+      background:var(--card); border-radius:12px; padding:14px 16px;
+      box-shadow:0 6px 18px rgba(15,23,42,0.06); border:1px solid rgba(15,23,42,0.04);
+    }
+    .time{font-size:13px; color:var(--muted); margin-bottom:6px;}
+    .person{font-size:16px; font-weight:600; margin-bottom:6px;}
+    .venue{font-size:14px; color:#0b1720; margin-bottom:6px;}
+    .meta{font-size:13px; color:var(--muted); margin-bottom:10px;}
+    .btn-row{display:flex; gap:10px; flex-wrap:wrap;}
+    .btn{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:10px 12px; text-decoration:none; border-radius:8px; font-weight:600; font-size:14px;
+      color:white; background:var(--accent); border:none;
+    }
+    .btn.secondary{background:#f3f4f6; color:#0b1320; font-weight:600; border:1px solid #e6e9ef;}
+    .note{font-size:12px; color:var(--muted); margin-top:8px;}
+    .section-head{display:flex; align-items:center; gap:12px; margin-top:18px; margin-bottom:8px;}
+    .origin {font-size:13px; color:var(--muted);}
+    footer{margin-top:26px; font-size:13px; color:var(--muted); text-align:center;}
+  </style>
 </head>
-
 <body>
-    <div class="container">
-        <h1>Executive Itinerary – Dec 10–13</h1>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Executive Itinerary — 10–13 Dec</h1>
+        <p>Base: Redwood City, CA · Click “Navigate from Redwood City” to open Maps + start navigation</p>
+      </div>
+      <div class="origin"><strong>Origin set to:</strong> Redwood City, CA</div>
+    </header>
 
-        <!-- WEDNESDAY -->
-        <div class="day-section">
-            <div class="day-title">Wednesday – 10 Dec</div>
+    <main class="grid">
+      <!-- WEDNESDAY -->
+      <div class="day" >
+        <div class="day-title">📅 Wednesday — 10 Dec</div>
 
-            <div class="card">
-                <div class="time">11:00 AM – 12:00 PM</div>
-                <div class="person">Kenny Wong – Xcures</div>
-                <div class="venue">Ritual Coffee Roasters, 1026 Valencia St, San Francisco</div>
-                <div class="travel">~45 mins • 30 miles from Redwood City hotel</div>
-                <a class="map-link" target="_blank" rel="noopener" 
-                   href="https://www.google.com/maps/search/?api=1&query=Ritual+Coffee+Roasters+1026+Valencia+St+San+Francisco">
-                   Open in Google Maps
-                </a>
-            </div>
-
-            <div class="card">
-                <div class="time">2:00 PM – 4:00 PM</div>
-                <div class="person">Robert Guigley, Sedide Ozturk – Freenome</div>
-                <div class="venue">Brisbane, CA</div>
-                <div class="travel">~20 mins • 15 miles from hotel</div>
-                <a class="map-link" target="_blank" rel="noopener" 
-                   href="https://www.google.com/maps/search/?api=1&query=Brisbane+CA">
-                   Open in Google Maps
-                </a>
-            </div>
-
-            <div class="card">
-                <div class="time">Dinner – 7:00 PM</div>
-                <div class="person">Chuck – Latitude CEO</div>
-                <div class="venue">Oakland, East Bay</div>
-                <div class="travel">~34 miles from hotel</div>
-                <a class="map-link" target="_blank" rel="noopener"
-                   href="https://www.google.com/maps/search/?api=1&query=Oakland+East+Bay">
-                   Open in Google Maps
-                </a>
-            </div>
+        <div class="card" style="margin-bottom:12px;">
+          <div class="time">09:30 AM – 10:30 AM</div>
+          <div class="person">Kenny Wong — Xcures</div>
+          <div class="venue">Ritual Coffee Roasters — 1026 Valencia St, San Francisco</div>
+          <div class="meta">Approx: ~30 mi from hotel</div>
+          <div class="btn-row">
+            <a class="btn" target="_blank" rel="noopener"
+               href="https://www.google.com/maps/dir/?api=1&origin=Redwood+City+CA&destination=1026+Valencia+St+San+Francisco+Ritual+Coffee+Roasters">
+               ▶ Navigate from Redwood City
+            </a>
+            <a class="btn secondary" target="_blank" rel="noopener"
+               href="https://maps.google.com/?q=Ritual+Coffee+Roasters+1026+Valencia+St+San+Francisco">
+               📍 Open Place
+            </a>
+          </div>
+          <div class="note">Tip: After Maps opens, tap “Start” to enable live navigation and ETA.</div>
         </div>
 
-        <!-- More days can be added similarly -->
+        <div class="card" style="margin-bottom:12px;">
+          <div class="time">02:00 PM – 03:30 PM</div>
+          <div class="person">Robert Guigley & Sedide Ozturk — Freenome</div>
+          <div class="venue">Brisbane, CA</div>
+          <div class="meta">Approx: ~19.7 mi from hotel</div>
+          <div class="btn-row">
+            <a class="btn" target="_blank" rel="noopener"
+               href="https://www.google.com/maps/dir/?api=1&origin=Redwood+City+CA&destination=Brisbane+CA+Freenome">
+               ▶ Navigate from Redwood City
+            </a>
+            <a class="btn secondary" target="_blank" rel="noopener"
+               href="https://maps.google.com/?q=Freenome+Inc+Brisbane+CA">
+               📍 Open Place
+            </a>
+          </div>
+        </div>
 
-    </div>
+        <div class="card" style="margin-bottom:8px;">
+          <div class="time">07:00 PM – 08:00 PM</div>
+          <div class="person">Dinner — Chuck (Latitude CEO)</div>
+          <div class="venue">Oakland — East Bay</div>
+          <div class="meta">Approx: ~34.5 mi from hotel</div>
+          <div class="btn-row">
+            <a class="btn" target="_blank" rel="noopener"
+               href="https://www.google.com/maps/dir/?api=1&origin=Redwood+City+CA&destination=Oakland+CA+Downtown">
+               ▶ Navigate from Redwood City
+            </a>
+            <a class="btn secondary" target="_blank" rel="noopener"
+               href="https://maps.google.com/?q=Oakland+Downtown+CA">
+               📍 Open Place
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- THURSDAY -->
+      <div class="day">
+        <div class="day-title">📅 Thursday — 11 Dec</div>
+
+        <div class="card">
+          <div class="time">10:00 AM – 11:00 AM</div>
+          <div class="person">Prateek Sharma — Ahead VC</div>
+          <div class="venue">Peet's Cafe, Santa Clara</div>
+          <div class="meta">Approx: ~18.9 mi from hotel</div>
+          <div class="btn-row">
+            <a class="btn" target="_blank" rel="noopener"
+               href="https://www.google.com/maps/dir/?api=1&origin=Redwood+City+CA&destination=Peet%27s+Coffee+Santa+Clara+CA">
+               ▶ Navigate from Redwood City
+            </a>
+            <a class="btn secondary" target="_blank" rel="noopener"
+               href="https://maps.google.com/?q=Peet%27s+Coffee+Santa+Clara+CA">
+               📍 Open Place
+            </a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px;">
+          <div class="time">12:00 PM – 01:00 PM</div>
+          <div class="person">Sanchit Garg</div>
+          <div class="venue">Palo Alto</div>
+          <div class="meta">Approx: ~8.8 mi from hotel</div>
+          <div class="btn-row">
+            <a class="btn" target="_blank" rel="noopener"
+               href="https://www.google.com/maps/dir/?api=1&origin=Redwood+City+CA&destination=Palo+Alto+CA">
+               ▶ Navigate from Redwood City
+            </a>
+            <a class="btn secondary" target="_blank" rel="noopener"
+               href="https://maps.google.com/?q=Palo+Alto+CA">
+               📍 Open Place
+            </a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px;">
+          <div class="time">02:00 PM – 03:00 PM</div>
+          <div class="person">Brad Hauser — Autonomix</div>
+          <div class="venue">Cafe Venetia, University Dr, Palo Alto</div>
+          <div class="meta">Approx: ~6.4 mi from hotel</div>
+          <div class="btn-row">
+            <a class="btn" target="_blank" rel="noopener"
+               href="https://www.google.com/maps/dir/?api=1&origin=Redwood+City+CA&destination=Cafe+Venetia+Palo+Alto">
+               ▶ Navigate from Redwood City
+            </a>
+            <a class="btn secondary" target="_blank" rel="noopener"
+               href="https://maps.google.com/?q=Cafe+Venetia+Palo+Alto">
+               📍 Open Place
+            </a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px;">
+          <div class="time">04:00 PM – 05:00 PM</div>
+          <div class="person">Abhijit Ghosh — XM Cyber</div>
+          <div class="venue">Cafe Venetia, University Dr, Palo Alto</div>
+          <div class="meta">Approx: ~6.4 mi from hotel</div>
+          <div class="btn-row">
+            <a class="btn" target="_blank" rel="noopener"
+               href="https://www.google.com/maps/dir/?api=1&origin=Redwood+City+CA&destination=Cafe+Venetia+Palo+Alto">
+               ▶ Navigate from Redwood City
+            </a>
+            <a class="btn secondary" target="_blank" rel="noopener"
+               href="https://maps.google.com/?q=Cafe+Venetia+Palo+Alto">
+               📍 Open Place
+            </a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px;">
+          <div class="time">06:00 PM – 07:30 PM</div>
+          <div class="person">Dhananjay Singh — Vocera / Stryker</div>
+          <div class="venue">Sunnyvale</div>
+          <div class="meta">Approx: ~15.7 mi from hotel</div>
+          <div class="btn-row">
+            <a class="btn" target="_blank" rel="noopener"
+               href="https://www.google.com/maps/dir/?api=1&origin=Redwood+City+CA&destination=Sunnyvale+CA">
+               ▶ Navigate from Redwood City
+            </a>
+            <a class="btn secondary" target="_blank" rel="noopener"
+               href="https://maps.google.com/?q=Sunnyvale+CA">
+               📍 Open Place
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- FRIDAY -->
+      <div class="day">
+        <div class="day-title">📅 Friday — 12 Dec</div>
+
+        <div class="card">
+          <div class="time">09:30 AM – 10:30 AM</div>
+          <div class="person">Shantanu Gangal</div>
+          <div class="venue">Mountain View</div>
+          <div class="meta">Approx: ~12.9 mi from hotel</div>
+          <div class="btn-row">
+            <a class="btn" target="_blank" rel="noopener"
+               href="https://www.google.com/maps/dir/?api=1&origin=Redwood+City+CA&destination=Mountain+View+CA">
+               ▶ Navigate from Redwood City
+            </a>
+            <a class="btn secondary" target="_blank" rel="noopener"
+               href="https://maps.google.com/?q=Mountain+View+CA">
+               📍 Open Place
+            </a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px;">
+          <div class="time">11:30 AM – 12:30 PM</div>
+          <div class="person">Hicham — Resilinc</div>
+          <div class="venue">San Ramon</div>
+          <div class="meta">Approx: ~39.9 mi from hotel</div>
+          <div class="btn-row">
+            <a class="btn" target="_blank" rel="noopener"
+               href="https://www.google.com/maps/dir/?api=1&origin=Redwood+City+CA&destination=San+Ramon+CA">
+               ▶ Navigate from Redwood City
+            </a>
+            <a class="btn secondary" target="_blank" rel="noopener"
+               href="https://maps.google.com/?q=San+Ramon+CA">
+               📍 Open Place
+            </a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px;">
+          <div class="time">01:30 PM – 02:30 PM</div>
+          <div class="person">Satish Kamatkar — Ambry</div>
+          <div class="venue">San Mateo</div>
+          <div class="meta">Approx: ~7.4 mi from hotel</div>
+          <div class="btn-row">
+            <a class="btn" target="_blank" rel="noopener"
+               href="https://www.google.com/maps/dir/?api=1&origin=Redwood+City+CA&destination=San+Mateo+CA">
+               ▶ Navigate from Redwood City
+            </a>
+            <a class="btn secondary" target="_blank" rel="noopener"
+               href="https://maps.google.com/?q=San+Mateo+CA">
+               📍 Open Place
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- SATURDAY -->
+      <div class="day">
+        <div class="day-title">📅 Saturday — 13 Dec</div>
+
+        <div class="card">
+          <div class="time">10:00 AM – 11:00 AM</div>
+          <div class="person">Avishek Panigrahi</div>
+          <div class="venue">Foster City</div>
+          <div class="meta">Approx: ~7 mi from hotel</div>
+          <div class="btn-row">
+            <a class="btn" target="_blank" rel="noopener"
+               href="https://www.google.com/maps/dir/?api=1&origin=Redwood+City+CA&destination=Foster+City+CA">
+               ▶ Navigate from Redwood City
+            </a>
+            <a class="btn secondary" target="_blank" rel="noopener"
+               href="https://maps.google.com/?q=Foster+City+CA">
+               📍 Open Place
+            </a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px;">
+          <div class="time">12:00 PM – 01:00 PM</div>
+          <div class="person">Lunch — Dileep Goyal</div>
+          <div class="venue">San Mateo / Redwood City (TBD)</div>
+          <div class="meta">Approx: variable</div>
+          <div class="btn-row">
+            <a class="btn" target="_blank" rel="noopener"
+               href="https://www.google.com/maps/dir/?api=1&origin=Redwood+City+CA&destination=San+Mateo+CA">
+               ▶ Navigate from Redwood City
+            </a>
+            <a class="btn secondary" target="_blank" rel="noopener"
+               href="https://maps.google.com/?q=San+Mateo+CA">
+               📍 Open Place
+            </a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px;">
+          <div class="time">01:30 PM – 02:30 PM</div>
+          <div class="person">Anup Ghoghare — Abbott</div>
+          <div class="venue">Sunnyvale</div>
+          <div class="meta">Approx: ~15.7 mi from hotel</div>
+          <div class="btn-row">
+            <a class="btn" target="_blank" rel="noopener"
+               href="https://www.google.com/maps/dir/?api=1&origin=Redwood+City+CA&destination=Sunnyvale+CA">
+               ▶ Navigate from Redwood City
+            </a>
+            <a class="btn secondary" target="_blank" rel="noopener"
+               href="https://maps.google.com/?q=Sunnyvale+CA">
+               📍 Open Place
+            </a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px;">
+          <div class="time">03:30 PM – 04:30 PM</div>
+          <div class="person">Prajith P — Satellite Healthcare</div>
+          <div class="venue">Redwood City</div>
+          <div class="meta">Approx: ~1 mi from hotel</div>
+          <div class="btn-row">
+            <a class="btn" target="_blank" rel="noopener"
+               href="https://www.google.com/maps/dir/?api=1&origin=Redwood+City+CA&destination=Redwood+City+CA">
+               ▶ Navigate from Redwood City
+            </a>
+            <a class="btn secondary" target="_blank" rel="noopener"
+               href="https://maps.google.com/?q=Redwood+City+CA">
+               📍 Open Place
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+
+    <footer>
+      Published via GitHub Pages · Click any "Navigate" button to open Google Maps directions in a new tab.
+    </footer>
+  </div>
 </body>
 </html>
